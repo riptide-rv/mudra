@@ -40,7 +40,7 @@ const PointsTable = () => {
       {teams.map((team, index) => (
             <div className='flex justify-between rounded-xl maincontainer border-2 m-2 mb-4 ' style={{
               borderColor: getColor(index),
-              background: getColorBG(index+10)
+              background: getColorBG(index)
             }} key={team.dept}>
               <div className='p-7'>
                 {team.dept}
