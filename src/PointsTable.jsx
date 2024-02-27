@@ -27,14 +27,15 @@ const PointsTable = () => {
 
 
   return (
-    <div className='w-[90vw] h-[90vh] overscroll:none backgroundmain'>
+    <div className='w-[90vw]   backgroundmain'>
       <div className='flex text-xs m-2 p-0 justify-between' style={{
         fontWeight: 200,
         letterSpacing: "0.09em"
       }}><div>DEPARTMENT</div><div className='flex-grow'></div><div className='mr-14'>SCORE</div><div className='mr-6'>POS</div></div>
-      <div className='flex-grow text-base w-[100%] flex-col justify-center items-center ' style={{
+      <div className='text-base w-[100%] flex-col justify-center items-center ' style={{
         letterSpacing: "0.2em",
-       
+       overflow: 'scroll',
+       overflow: 'auto',
         fontWeight:400
       }}>
       {teams.map((team, index) => (
