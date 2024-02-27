@@ -1,6 +1,7 @@
 // src/PointsTable.js
 import React, { useEffect, useState } from 'react';
 import { database } from './config/firebase';
+import logo from './assets/logo.png';
 
 const PointsTable = () => {
   const [teams, setTeams] = useState([]);
@@ -28,6 +29,7 @@ const PointsTable = () => {
 
   return (
     <div className='w-[90vw]   backgroundmain'>
+      <div className='flex-grow justify-center items-center sm:pr-0 pr-6'><div className='flex justify-center'><img  className='h-[6em]' src={logo} alt="logo" /></div></div>
       <div className='flex text-xs m-2 p-0 justify-between' style={{
         fontWeight: 200,
         letterSpacing: "0.09em"
