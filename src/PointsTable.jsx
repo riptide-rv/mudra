@@ -45,13 +45,20 @@ const PointsTable = () => {
               borderColor: getColor(index),
               background: getColorBG(index)
             }} key={team.dept}>
-              <div className='p-7'>
+              <div className='p-7' style={{
+                fontWeight: 900,
+              }}>
                 {team.dept}
               </div>
-              <div className='flex-grow'></div>
-              <div className='mr-4 p-7'>{team.score}</div>
+              <div className='flex-grow'  style={{
+                fontWeight: 900,
+              }}></div>
+              <div className='mr-4 p-7'  style={{
+                fontWeight: 900,
+              }}>{team.score}</div>
               <div className='px-8  p-7 border-l-2' style={{
-                borderColor:getColor(index)
+                borderColor:getColor(index),
+                fontWeight: 900,
               }}>{index+1}</div>
             </div>
           ))}

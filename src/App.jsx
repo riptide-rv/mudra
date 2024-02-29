@@ -11,9 +11,9 @@ function App() {
     <div className="App">
       <BrowserRouter basename='/mudra'>
         <Routes>
-          <Route element={<PrivateRoutes/>}>
+          
           <Route path="/admin" element={<AdminPage/>} />
-          </Route>
+          
         <Route path="/" element={<PointsTable/>} />
         <Route path="/login" element={<Login/>} />
         </Routes>
